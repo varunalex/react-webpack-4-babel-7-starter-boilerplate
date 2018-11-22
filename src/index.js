@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import './styles.scss';
+
 const App = () => {
   return (
-    <div>
+    <div className="app">
       <p>
         Hello! <br />
         This boilerplate is working!
