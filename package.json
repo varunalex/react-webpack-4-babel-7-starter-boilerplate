@@ -1,7 +1,7 @@
 {
-  "name": "react-webpack-4-babel-7-boilerplate",
+  "name": "react-webpack-4-babel-7-starter-boilerplate",
   "version": "1.0.0",
-  "description": "Startup boilerplate of React16.3 + Webpack 4 + Babel 7",
+  "description": "Startup boilerplate of React16.x + Webpack 4 + Babel 7",
   "main": "src/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development --config config/webpack.base.config.js --open --hot --history-api-fallback --env.PLATFORM=local --env.VERSION=stag",
@@ -16,14 +16,15 @@
     "Reactjs",
     "webpack4",
     "bable7",
+    "starter",
     "boilerplate"
   ],
   "author": "Varuna Eeriyaulla",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/varunalex/React-Webpack-4-Babel-7-boilerplate/issues"
+    "url": "https://github.com/varunalex/react-webpack-4-babel-7-starter-boilerplate/issues"
   },
-  "homepage": "https://github.com/varunalex/React-Webpack-4-Babel-7-boilerplate#readme",
+  "homepage": "https://github.com/varunalex/react-webpack-4-babel-7-starter-boilerplate#readme",
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
