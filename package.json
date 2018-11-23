@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/varunalex/react-webpack-4-babel-7-starter-boilerplate#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
