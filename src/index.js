@@ -6,11 +6,8 @@ import './styles.scss';
 const App = () => {
   return (
     <div className="app">
-      <p>
-        Hello! <br />
-        This boilerplate is working!
-      </p>
-      <p>- Varuna</p>
+    <img alt="header" src="/dist/images/header.png" className="app-header" />
+      <h2>Yoo! Start to build your app.</h2>
     </div>
   );
 };

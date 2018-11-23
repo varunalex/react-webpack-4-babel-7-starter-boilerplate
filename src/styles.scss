@@ -1,12 +1,18 @@
 body {
-  background-color: rgb(67, 2, 83);
-  color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(22, 6, 255);
 }
 
 .app {
-  width: 450px;
+  width: 760px;
   margin: auto auto;
   left: 0;
   right: 0;
   text-align: center;
+
+  & .app-header {
+    height: 250px;
+    width: inherit;
+    object-fit: cover;
+  }
 }
