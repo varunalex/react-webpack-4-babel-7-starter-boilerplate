@@ -19,6 +19,11 @@ Startup boilerplate of React16.3 + Webpack 4 + Babel 7 (HMR enabled)
  
    `npm start prebuild`
 
+#### Note:
+- At `config/webpack.prod.config.js`:  The `optimization.splitChunks` actually takes all of your common code and creates a `vendor.bundle.js` file. Currently this segment is commented. I you want to use `splitChunks` feel free to uncomment the code segment. For more : [splitChunks](https://webpack.js.org/plugins/split-chunks-plugin/)
+- Run prebuild after updating static assets and point source of the `dist/` folder.
+``` <img  alt="header"  src="/dist/images/header.png"  className="app-header"  /> ```
+
 ### What's include?
 - [webpack](http://webpack.js.org/): We need Webpack to bundle our code.
 
