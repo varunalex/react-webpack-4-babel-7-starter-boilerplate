@@ -1,5 +1,5 @@
 # React-Webpack-4-Babel-7-boilerplate
-Startup boilerplate of React16.3 + Webpack 4 + Babel 7 (HMR enabled)
+Startup boilerplate of React16.x + Webpack 4 + Babel 7 (HMR enabled)
 
 ![React-Webpack-4-Babel-7-boilerplat](https://raw.githubusercontent.com/varunalex/React-Webpack-4-Babel-7-boilerplate/master/dist/images/header.png)
 
