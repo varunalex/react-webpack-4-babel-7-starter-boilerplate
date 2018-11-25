@@ -1,5 +1,5 @@
 # React-Webpack-4-Babel-7-boilerplate
-Startup boilerplate of React16.3 + Webpack 4 + Babel 7 (HMR enabled)
+Startup boilerplate of React16.x + Webpack 4 + Babel 7 (HMR enabled)
 
 ![React-Webpack-4-Babel-7-boilerplat](https://raw.githubusercontent.com/varunalex/React-Webpack-4-Babel-7-boilerplate/master/dist/images/header.png)
 
@@ -12,15 +12,22 @@ Startup boilerplate of React16.3 + Webpack 4 + Babel 7 (HMR enabled)
  
     `npm install`
 #### Usage
- - Start development server - build app continuously (HMR enabled)
+ - Start development server - build app continuously (HMR enabled) @ `http://localhost:8080`
  
    `npm run start`
- - Build  - `dist/`
+ - Pre-build  - `dist/` - Build app for production
  
-   `npm start prebuild`
+   `npm run prebuild`
 
-#### Note:
+- Build - Build app once (HMR disabled) and serve @ `http://localhost:3000`
+
+  `npm run build`
+  
+Basically if we write the word `pre` for a script, in this case `prebuild`, every time we run our command `npm run build` it will first execute `npm run prebuild` and then run the script `npm run build`
+
+#### Notes :
 - At `config/webpack.prod.config.js`:  The `optimization.splitChunks` actually takes all of your common code and creates a `vendor.bundle.js` file. Currently this segment is commented. I you want to use `splitChunks` feel free to uncomment the code segment. For more : [splitChunks](https://webpack.js.org/plugins/split-chunks-plugin/)
+
 - Run prebuild after updating static assets and point source of the `dist/` folder.
 ``` <img  alt="header"  src="/dist/images/header.png"  className="app-header"  /> ```
 
