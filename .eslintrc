@@ -1,15 +1,16 @@
 {
   "parser": "babel-eslint",
   "plugins": [
-    "react",
-    "jsx-a11y",
-    "import"
+    "react"
   ],
   "rules": {
-    "no-console": 0
+    "no-console": 0,
+    "linebreak-style": 0,
+    "import/no-extraneous-dependencies": 0
   },
   "extends": [
-    "airbnb"
+    "airbnb-base",
+    "plugin:react/recommended"
   ],
   "env": {
     "browser": true,
