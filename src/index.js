@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import Jsx from './components/jsx.jsx'
+
 import './styles.scss';
 
 const App = () => {
@@ -8,6 +10,7 @@ const App = () => {
     <div className="app">
     <img alt="header" src="/dist/images/header.png" className="app-header" />
       <h2>Yoo! Start to build your app.</h2>
+      <Jsx />
     </div>
   );
 };
