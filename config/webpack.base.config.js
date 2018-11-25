@@ -24,6 +24,7 @@ module.exports = env => {
                 loader: 'babel-loader'
               }
             },
+            // Sass
             {
               test: /\.scss$/,
               use: [
@@ -32,6 +33,12 @@ module.exports = env => {
                 'css-loader',
                 'sass-loader'
               ]
+            },
+            // Eslint
+            {
+              test: /\.js$/,
+              exclude: /node_modules/,
+              use: ['babel-loader', 'eslint-loader']
             }
           ]
         },
