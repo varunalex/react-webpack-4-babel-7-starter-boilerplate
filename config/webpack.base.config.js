@@ -6,13 +6,15 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-const APP_DIR = path.resolve(__dirname, '../src'); // <===== new stuff added here
+// Set APP_DIR
+const APP_DIR = path.resolve(__dirname, '../src');
 
 module.exports = env => {
   const { PLATFORM, VERSION } = env;
   return merge([
       {
-        entry: ['@babel/polyfill', APP_DIR], // <===== new stuff added here
+        // Use entry pont as APP_DIR. You can use static entry point without using pollyfill
+        entry: ['@babel/polyfill', APP_DIR],
         module: {
           rules: [
             {
@@ -25,6 +27,7 @@ module.exports = env => {
             {
               test: /\.scss$/,
               use: [
+                // Minify on production env
                 PLATFORM === 'production' ? MiniCssExtractPlugin.loader : 'style-loader',
                 'css-loader',
                 'sass-loader'
@@ -41,6 +44,7 @@ module.exports = env => {
             'process.env.VERSION': JSON.stringify(env.VERSION),
             'process.env.PLATFORM': JSON.stringify(env.PLATFORM)
           }),
+          // When building the app, 'src/static' folder will copy to 'dist' folder
           new CopyWebpackPlugin([ { from: 'src/static' } ]),
         ],
     }

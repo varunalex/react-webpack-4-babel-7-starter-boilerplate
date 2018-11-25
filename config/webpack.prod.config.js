@@ -11,6 +11,7 @@ const baseConfig = require('./webpack.base.config');
 const prodConfiguration = env => {
   return merge([
     {
+      // Un-comment this part if you want to use splitChunks. That's all.
       optimization: {
         // runtimeChunk: 'single',
         // splitChunks: {
@@ -27,6 +28,7 @@ const prodConfiguration = env => {
       plugins: [
         new MiniCssExtractPlugin(),
         new OptimizeCssAssetsPlugin(),
+        // Change output file name if you want.
         new Visualizer({ filename: './statistics.html' })
       ],
     },
