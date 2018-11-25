@@ -1,5 +1,5 @@
 
-# React-Webpack-4-Babel-7-boilerplate
+# React-Webpack-4-Babel-7-starter-boilerplate
 Startup boilerplate of React16.x + Webpack 4 + Babel 7 (HMR enabled) + ESLint
 
 ![React-Webpack-4-Babel-7-boilerplat](https://raw.githubusercontent.com/varunalex/React-Webpack-4-Babel-7-boilerplate/master/dist/images/header.png)
@@ -33,8 +33,7 @@ Basically if we write the word `pre` for a script, in this case `prebuild`, ever
 ```html
  <img alt="header" src="/dist/images/header.png"  className="app-header" />
 ```
-- **Eslint**
-You can your favorite eslint rules set. By default airbnb eslint configurations has installed. 
+- **Eslint** : You can use your favorite eslint rules set. By default airbnb eslint configurations has installed. 
 
 ### What's include?
 - [webpack](http://webpack.js.org/)
